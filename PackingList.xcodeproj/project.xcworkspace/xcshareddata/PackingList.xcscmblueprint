@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3259C02F73BB78C22581EA163DB4A2732A3F18EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3259C02F73BB78C22581EA163DB4A2732A3F18EB" : 0,
+    "3EBF09DA02AD9547D8B513A3EB91A1C4719ADB2D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "006144E4-FCBB-4A75-9A05-3637BE051CE7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3259C02F73BB78C22581EA163DB4A2732A3F18EB" : "autoLayout\/",
+    "3EBF09DA02AD9547D8B513A3EB91A1C4719ADB2D" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PackingList",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PackingList.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/travisgillespie\/iOSAnimationsAutoLayout.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3259C02F73BB78C22581EA163DB4A2732A3F18EB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/travisgillespie\/Animations.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3EBF09DA02AD9547D8B513A3EB91A1C4719ADB2D"
+    }
+  ]
+}
