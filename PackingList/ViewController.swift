@@ -39,6 +39,14 @@ class ViewController: UIViewController {
                     constraint.constant = isMenuOpen ? -100.0 : 0.0
                     continue
             }
+            
+            if constraint.identifier == "TitleCenterY" {
+                constraint.active = false
+                
+                //add new constraint
+                
+                continue
+            }
         }
         
         menuHeightConstraint.constant = isMenuOpen ? 200.0 : 60.0
