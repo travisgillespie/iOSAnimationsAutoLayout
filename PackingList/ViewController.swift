@@ -87,6 +87,19 @@ class ViewController: UIViewController {
     
     func showItem(index: Int) {
         print("tapped item \(index)")
+        
+        let imageView = UIImageView(image: UIImage(named: "summericons_100px_0\(index).png"))
+        imageView.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        imageView.layer.cornerRadius = 5.0
+        imageView.layer.masksToBounds = true
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        
+        let conX = imageView.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor)
+        let conBottom = imageView.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor, constant: imageView.frame.height)
+        let conWidth = imageView.widthAnchor.constraintEqualToAnchor(view.widthAnchor, multiplier: 0.33, constant: -50.0)
+        let conHeight = imageView.heightAnchor.constraintEqualToAnchor(imageView.widthAnchor)
+        NSLayoutConstraint.activateConstraints([conX, conBottom, conWidth, conHeight])
     }
 }
 
@@ -118,7 +131,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.imageView?.image = UIImage(named: "summericons_100px_0\(items[indexPath.row]).png")
         return cell
     }
-    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
