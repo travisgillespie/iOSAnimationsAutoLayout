@@ -29,6 +29,12 @@ class ViewController: UIViewController {
         isMenuOpen = !isMenuOpen
         menuHeightConstraint.constant = isMenuOpen ? 200.0 : 60.0
         titleLabel.text = isMenuOpen ? "Select Item" : "Packing List"
+        
+        UIView.animateWithDuration(1.0, delay: 0.0,
+            usingSpringWithDamping: 0.4, initialSpringVelocity: 10.0,
+            options: .CurveEaseIn, animations: {
+                self.view.layoutIfNeeded()
+            }, completion: nil)
     }
     
     func showItem(index: Int) {
