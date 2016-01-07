@@ -76,6 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="buttonMenu" destination="api-wi-KAO" id="OLJ-2Z-ztJ"/>
+                        <outlet property="menuHeightConstraint" destination="frS-oe-ySJ" id="1nh-YI-aTW"/>
                         <outlet property="tableView" destination="Abk-aH-Ka1" id="PF1-xc-EOx"/>
                         <outlet property="titleLabel" destination="TD2-36-Qx8" id="0BM-16-Rn2"/>
                     </connections>
