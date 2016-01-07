@@ -34,6 +34,9 @@ class ViewController: UIViewController {
             usingSpringWithDamping: 0.4, initialSpringVelocity: 10.0,
             options: .CurveEaseIn, animations: {
                 self.view.layoutIfNeeded()
+                
+                let angle = self.isMenuOpen ? CGFloat(M_PI_4) : 0.0
+                self.buttonMenu.transform = CGAffineTransformMakeRotation(angle)
             }, completion: nil)
     }
     
