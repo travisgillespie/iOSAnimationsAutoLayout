@@ -44,6 +44,16 @@ class ViewController: UIViewController {
                 constraint.active = false
                 
                 //add new constraint
+                let newConstraint = NSLayoutConstraint(
+                    item: titleLabel,
+                    attribute: .CenterY,
+                    relatedBy: .Equal,
+                    toItem: titleLabel.superview!,
+                    attribute: .CenterY,
+                    multiplier: isMenuOpen ? 0.67 : 1.0,
+                    constant: 5.0)
+                newConstraint.identifier = "TitleCenterY"
+                newConstraint.active = true
                 
                 continue
             }
