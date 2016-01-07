@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     //MARK: class methods
     
-    @IBAction func actionToggleMenu(sender: UIButton){
+    @IBAction func actionToggleMenu(sender: AnyObject){
         
         for con in titleLabel.superview!.constraints {
             print(" -> \(con.description)\n")
@@ -56,6 +56,19 @@ class ViewController: UIViewController {
                 newConstraint.active = true
                 
                 continue
+            }
+            
+            if isMenuOpen {
+                slider = HorizontalItemList(inView: view)
+                slider.didSelectItem = {index in
+                    print("add \(index)")
+                    self.items.append(index)
+                    self.tableView.reloadData()
+                    self.actionToggleMenu(self)
+                }
+                self.titleLabel.superview!.addSubview(slider)
+            } else {
+                slider.removeFromSuperview()
             }
         }
         
@@ -105,6 +118,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.imageView?.image = UIImage(named: "summericons_100px_0\(items[indexPath.row]).png")
         return cell
     }
+    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
